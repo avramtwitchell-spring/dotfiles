@@ -26,7 +26,7 @@ ln -sf $DOTFILES/init.vim $HOME/.config/nvim/init.vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 # Install plugins automatically
-nvim +PluginInstall +qall
+nvim --headless +PluginInstall +qall
 
 # LSP setup
 gem install solargraph
