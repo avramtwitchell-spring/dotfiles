@@ -8,18 +8,19 @@ sudo apt update && sudo apt install -y zsh neovim nodejs npm fzf
 #   git clone https://your-dotfiles-repo-url.git $HOME/dotfiles
 # fi
 
+export DOTFILES=/workspaces/.codespaces/.persistedshare/dotfiles
 # Symlink .zshrc and .bashrc to your home directory
-ln -sf $HOME/dotfiles/.zshrc $HOME/.zshrc
-ln -sf $HOME/dotfiles/.bashrc $HOME/.bashrc
-ln -sf $HOME/dotfiles/.aliases $HOME/.aliases
-ln -sf $HOME/dotfiles/.vimrc $HOME/.vimrc
+ln -sf $DOTFILES/.zshrc $HOME/.zshrc
+ln -sf $DOTFILES/.bashrc $HOME/.bashrc
+ln -sf $DOTFILES/.aliases $HOME/.aliases
+ln -sf $DOTFILES/.vimrc $HOME/.vimrc
 
 # Set zsh as the default shell
-chsh -s $(which zsh)
+sudo chsh "$(id -un)" --shell "/usr/bin/zsh"
 
 # Neovim configuration setup
 mkdir -p $HOME/.config/nvim
-ln -sf $HOME/dotfiles/init.vim $HOME/.config/nvim/init.vim
+ln -sf $DOTFILES/init.vim $HOME/.config/nvim/init.vim
 
 # Install Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
