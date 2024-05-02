@@ -1,5 +1,5 @@
 if filereadable(expand('~/.vimrc'))
-    source /Users/avram.twitchell/.vimrc
+    source $HOME/.vimrc
 endif
 
 " Set up:
