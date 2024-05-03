@@ -6,6 +6,7 @@ sudo apt update && sudo apt install -y zsh nodejs npm fzf
 # Install specific version of neovim
 # I'm using v0.9.5
 wget -O $HOME/nvim.appimage https://github.com/neovim/neovim/releases/download/v0.9.5/nvim.appimage
+chmod 755 $HOME/nvim.appimage
 sudo $HOME/nvim.appimage --appimage-extract
 mv ./squashfs-root $HOME/nvim
 sudo ln $HOME/nvim/usr/bin/nvim /usr/bin/nvim
