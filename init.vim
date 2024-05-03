@@ -5,7 +5,8 @@ endif
 " Set up:
 " Add  `neovim/nvim-lspconfig` plugin
 " Install
-" gem install solargraph
+" You should use `bundle exec nvim` to ensure you're using the right version
+" of standard, rubocop, solargraph, etc.
 " restart
 lua << EOF
 require'lspconfig'.solargraph.setup {
