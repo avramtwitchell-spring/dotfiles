@@ -8,9 +8,9 @@ sudo apt update && sudo apt install -y zsh nodejs npm fzf
 wget -O $HOME/nvim.appimage https://github.com/neovim/neovim/releases/download/v0.9.5/nvim.appimage
 chmod 755 $HOME/nvim.appimage
 sudo $HOME/nvim.appimage --appimage-extract
-mv ./squashfs-root $HOME/nvim
+sudo mv ./squashfs-root $HOME/nvim
 sudo ln $HOME/nvim/usr/bin/nvim /usr/bin/nvim
-
+export VIMRUNTIME=$HOME/nvim/usr/share/nvim/runtime
 
 # Symlink .zshrc and .bashrc to your home directory
 export DOTFILES=/workspaces/.codespaces/.persistedshare/dotfiles
