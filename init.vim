@@ -9,14 +9,8 @@ endif
 " of standard, rubocop, solargraph, etc.
 " restart
 lua << EOF
-require'lspconfig'.solargraph.setup {
-    cmd = { "solargraph", "stdio" },
+require'lspconfig'.standardrb.setup {
     filetypes = { "ruby", "erb" },
-    settings = {
-        solargraph = {
-            diagnostics = true
-        }
-    },
     on_attach = function(client, bufnr)
         local function buf_set_option(...) vim.api.nvim_buf_set_option(bufnr, ...) end
         -- Enable completion triggered by <c-x><c-o>

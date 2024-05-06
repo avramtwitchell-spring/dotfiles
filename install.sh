@@ -11,7 +11,9 @@ chmod 755 $HOME/nvim.appimage
 sudo $HOME/nvim.appimage --appimage-extract
 sudo mv ./squashfs-root $HOME/nvim
 sudo ln $HOME/nvim/usr/bin/nvim /usr/bin/nvim
-export VIMRUNTIME=$HOME/nvim/usr/share/nvim/runtime
+
+# asdf
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0
 
 # Symlink various dotfiles to home directory
 export DOTFILES=/workspaces/.codespaces/.persistedshare/dotfiles
@@ -38,4 +40,5 @@ nvim --headless +PluginInstall +qall
 gem install solargraph
 sudo npm install -g typescript typescript-language-server
 
+export VIMRUNTIME=$HOME/nvim/usr/share/nvim/runtime
 echo "Dotfile setup complete."
