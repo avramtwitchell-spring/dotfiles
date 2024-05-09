@@ -40,5 +40,6 @@ nvim --headless +PluginInstall +qall
 gem install solargraph
 sudo npm install -g typescript typescript-language-server
 
-export VIMRUNTIME=$HOME/nvim/usr/share/nvim/runtime
+echo "export VIMRUNTIME=$HOME/nvim/usr/share/nvim/runtime" >> ~/.zshrc
+
 echo "Dotfile setup complete."
