@@ -20,6 +20,7 @@ export DOTFILES=/workspaces/.codespaces/.persistedshare/dotfiles
 ln -sf $DOTFILES/.zshrc $HOME/.zshrc
 ln -sf $DOTFILES/.bashrc $HOME/.bashrc
 ln -sf $DOTFILES/.aliases $HOME/.aliases
+ln -sf $DOTFILES/.work_rc $HOME/.work_rc
 ln -sf $DOTFILES/.vimrc $HOME/.vimrc
 ln -sf $DOTFILES/.p10k.zsh $HOME/.p10k.zsh
 

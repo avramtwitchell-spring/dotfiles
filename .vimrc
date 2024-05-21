@@ -7,8 +7,7 @@ set rtp+=~/.vim/bundle/Vundle.vim  " Modifies the run time path to include Vundl
 " Load Vundle Packages
 call vundle#begin()
     Plugin 'gmarik/Vundle.vim'
-    Plugin 'scrooloose/nerdtree'                       " File exploration
-    Plugin 'andymass/vim-matchup'                      " Matching between terms e.g. if else
+    Plugin 'scrooloose/nerdtree'                       " File exploration Plugin 'andymass/vim-matchup'                      " Matching between terms e.g. if else
     Plugin 'junegunn/fzf'                              " Enables fuzzy finding
     Plugin 'junegunn/fzf.vim'                          " Adds fuzzy finding bindings for vim
     Plugin 'tpope/vim-fugitive'                        " Git Plugin
@@ -21,8 +20,8 @@ call vundle#begin()
     Plugin 'tpope/vim-commentary'                      " Quick commenting
     " Plugin 'tpope/vim-surround'                        " Surrounds with quotes, tags, brackets, etc
     Plugin 'ryanoasis/vim-devicons'                    " Icons for file manager
-    " Plugin 'vimwiki/vimwiki'                           " Vimwiki
-    " Plugin 'michal-h21/vim-zettel'                     " Some vimwiki helpers
+    Plugin 'vimwiki/vimwiki'                           " Vimwiki
+    Plugin 'michal-h21/vim-zettel'                     " Some vimwiki helpers
     Plugin 'neovim/nvim-lspconfig'                     " Setup lsp in neovim
 call vundle#end()
 
@@ -88,8 +87,8 @@ let g:matchup_matchparen_deferred_show_delay = 200
 let g:matchup_matchparen_deferred_hide_delay = 50
 
 " Vimwiki settings
-" let g:vimwiki_list = [{'path':'~/vimwiki/wiki', 'path_html':'~/vimwiki/export/html', 'auto_export': 1}]
-" let g:vimwiki_list = [{'path':'~/vimwiki/wiki', 'syntax': 'markdown', 'links_space_char': '_', 'ext': '.md'}]
+let g:vimwiki_list = [{'path':'~/vimwiki/wiki', 'path_html':'~/vimwiki/export/html', 'auto_export': 1}]
+let g:vimwiki_list = [{'path':'~/vimwiki/wiki', 'syntax': 'markdown', 'links_space_char': '_', 'ext': '.md'}]
 
 " Dev icons
 let g:webdevicons_enable_nerdtree = 1
@@ -261,3 +260,7 @@ augroup vimwikigroup
     " automatically update links on read diary
     autocmd BufRead,BufNewFile diary.wiki VimwikiDiaryGenerateLinks
 augroup end
+
+"" Commands
+
+command Exec set splitbelow | new | set filetype=sh | read !sh #

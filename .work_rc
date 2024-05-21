@@ -1,0 +1,7 @@
+export CS_HOME="/workspaces/development-space"
+alias ehrs="cd $CS_HOME/ehr-api; bundle exec rails s"
+alias rotoms="cd $CS_HOME/rotom; bundle exec rails s"
+alias ehrc="cd $CS_HOME/ehr-api; bundle exec rails c"
+alias rotomc="cd $CS_HOME/rotom; bundle exec rails c"
+alias ehrtlogs="tail -f $CS_HOME/ehr-api/log/development.rb"
+alias rotomtlogs="tail -f $CS_HOME/rotom/log/development.rb"

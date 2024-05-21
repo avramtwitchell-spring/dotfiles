@@ -55,3 +55,6 @@ alias ctl='ctags -R --fields=+l --languages=python --python-kinds=-iv -f ./tags 
 alias rtags='ctags -R --languages=ruby --exclude=.git --exclude=log . $(bundle list --paths)'
 alias ntags='ctags -R --exclude=.git --exclude=tmp .'
 
+# Github CLI
+
+alias gsh='gh codespace ssh'
