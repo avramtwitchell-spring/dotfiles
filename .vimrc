@@ -23,6 +23,8 @@ call vundle#begin()
     Plugin 'vimwiki/vimwiki'                           " Vimwiki
     Plugin 'michal-h21/vim-zettel'                     " Some vimwiki helpers
     Plugin 'neovim/nvim-lspconfig'                     " Setup lsp in neovim
+    Plugin 'nvim-lua/plenary.nvim'                     " Dependency for telescope
+    Plugin 'nvim-telescope/telescope.nvim'             " Telescope fuzzy finding
 call vundle#end()
 
 " Basic Settings ------------
@@ -130,9 +132,9 @@ nnoremap <leader>h :set hlsearch!<cr>
 nnoremap <leader>rn :set rnu!<cr>
 
 """ Fuzzy Files
-nmap ; :Buffers<cr>
-nmap <leader>f :Files<CR>
-nmap <leader>t :Tags<CR>
+nnoremap ; :lua require('telescope.builtin').buffers({sort_mru=true})<cr>
+nnoremap <leader>f :Telescope find_files<CR>
+nnoremap <leader>t :Telescope help_tags<CR>
 
 """ Notes Stuff
 function! OpenProjectNotes()
