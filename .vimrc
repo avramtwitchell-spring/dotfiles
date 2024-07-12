@@ -7,7 +7,8 @@ set rtp+=~/.vim/bundle/Vundle.vim  " Modifies the run time path to include Vundl
 " Load Vundle Packages
 call vundle#begin()
     Plugin 'gmarik/Vundle.vim'
-    Plugin 'scrooloose/nerdtree'                       " File exploration Plugin 'andymass/vim-matchup'                      " Matching between terms e.g. if else
+    Plugin 'scrooloose/nerdtree'                       " File exploration
+    Plugin 'andymass/vim-matchup'                      " Matching between terms e.g. if else
     Plugin 'junegunn/fzf'                              " Enables fuzzy finding
     Plugin 'junegunn/fzf.vim'                          " Adds fuzzy finding bindings for vim
     Plugin 'tpope/vim-fugitive'                        " Git Plugin

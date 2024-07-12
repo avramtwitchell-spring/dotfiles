@@ -66,6 +66,7 @@ fpath+=${ZDOTDIR:-~}/.zsh_functions
 
 source ~/.bashrc
 export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/opt/bison/bin:$PATH"
 if [ -f ~/.env_vars ]; then source ~/.env_vars; fi
 
 # ASDF
