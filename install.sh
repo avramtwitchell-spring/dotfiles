@@ -23,6 +23,7 @@ ln -sf $DOTFILES/.aliases $HOME/.aliases
 ln -sf $DOTFILES/.work_rc $HOME/.work_rc
 ln -sf $DOTFILES/.vimrc $HOME/.vimrc
 ln -sf $DOTFILES/.p10k.zsh $HOME/.p10k.zsh
+ln -sf $DOTFILES/.tmux.conf $HOME/.tmux.conf
 
 ## Neovim configuration setup
 mkdir -p $HOME/.config/nvim
