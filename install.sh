@@ -2,7 +2,7 @@
 
 echo "Beginning setting up Dotfiles..."
 # Update package list and install zsh and neovim
-sudo apt update && sudo apt install -y zsh nodejs npm fzf
+sudo apt update && sudo apt install -y zsh nodejs npm fzf tmux
 
 # Install specific version of neovim
 # I'm using v0.9.5
