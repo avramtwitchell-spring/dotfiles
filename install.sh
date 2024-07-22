@@ -25,6 +25,11 @@ ln -sf $DOTFILES/.vimrc $HOME/.vimrc
 ln -sf $DOTFILES/.p10k.zsh $HOME/.p10k.zsh
 ln -sf $DOTFILES/.tmux.conf $HOME/.tmux.conf
 
+# Set up global ignore file
+mkdir -p $HOME/.config/git
+git config --global core.excludesfile ~/.config/git/ignore
+ln -sf $DOTFILES/ignore $HOME/.config/git/ignore
+
 ## Neovim configuration setup
 mkdir -p $HOME/.config/nvim
 ln -sf $DOTFILES/init.vim $HOME/.config/nvim/init.vim
