@@ -47,6 +47,10 @@ nvim --headless +PluginInstall +qall
 gem install solargraph
 sudo npm install -g typescript typescript-language-server
 
+# Copilot setup
+
+git clone https://github.com/github/copilot.vim ~/.config/nvim/pack/github/start/copilot.vim
+
 echo "export VIMRUNTIME=$HOME/nvim/usr/share/nvim/runtime" >> ~/.zshrc
 
 echo "Dotfile setup complete."
