@@ -50,6 +50,7 @@ sudo npm install -g typescript typescript-language-server
 # Copilot setup
 
 git clone https://github.com/github/copilot.vim ~/.config/nvim/pack/github/start/copilot.vim
+git clone -b canary https://github.com/CopilotC-Nvim/CopilotChat.nvim ~/.config/nvim/pack/github/start/CopilotChat.nvim
 
 echo "export VIMRUNTIME=$HOME/nvim/usr/share/nvim/runtime" >> ~/.zshrc
 

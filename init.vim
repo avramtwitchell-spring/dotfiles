@@ -71,3 +71,7 @@ require'lspconfig'.tsserver.setup {
 }
 EOF
 
+lua << EOF
+require'CopilotChat'.setup {
+}
+EOF
