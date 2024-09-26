@@ -172,6 +172,16 @@ let g:fzf_preview_window = []
 """ NERDTree
 nnoremap <leader>n :NERDTreeToggle<CR>
 
+""" Copilot
+nnoremap <leader>ai :CopilotChatToggle<CR>
+vnoremap <leader>ae :CopilotChatExplain<CR>
+vnoremap <leader>ar :CopilotChatReview<CR>
+vnoremap <leader>af :CopilotChatFix<CR>
+vnoremap <leader>ao :CopilotChatOptimize<CR>
+vnoremap <leader>ad :CopilotChatDocs<CR>
+vnoremap <leader>at :CopilotChatTests<CR>
+vnoremap <leader>aafd :CopilotChatFixDiagnostic<CR>
+
 "" Operator Mapping ----
 
 " " Get next/last paranthesis
