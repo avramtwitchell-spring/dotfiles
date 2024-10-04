@@ -277,3 +277,7 @@ augroup end
 "" Commands
 
 command Exec set splitbelow | new | set filetype=sh | read !sh #
+
+"" conceal level
+nnoremap <leader>c0 :set conceallevel=0<CR>
+nnoremap <leader>c1 :set conceallevel=1<CR>

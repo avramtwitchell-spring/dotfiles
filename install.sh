@@ -52,6 +52,12 @@ sudo npm install -g typescript typescript-language-server
 git clone https://github.com/github/copilot.vim ~/.config/nvim/pack/github/start/copilot.vim
 git clone -b canary https://github.com/CopilotC-Nvim/CopilotChat.nvim ~/.config/nvim/pack/github/start/CopilotChat.nvim
 
+# Tmux plugin setup
+mkdir -p $HOME/.tmux/plugins
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+~/.tmux/plugins/tpm/scripts/install_plugins.sh
+
 echo "export VIMRUNTIME=$HOME/nvim/usr/share/nvim/runtime" >> ~/.zshrc
 
 echo "Dotfile setup complete."
